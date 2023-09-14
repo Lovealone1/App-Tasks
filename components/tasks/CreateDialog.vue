@@ -55,6 +55,7 @@ const dialog = ref(false)
 const saveTask = async () => {
   const result = await axios.post("http://localhost:3001/tasks", task.value)
   console.log(result);
+  loadTasks();
 }
 
 

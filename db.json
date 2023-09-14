@@ -30,11 +30,29 @@
     {
       "conditions": true,
       "period": "1",
-      "name": "test",
+      "name": "Actividad Marvel",
       "email": "test@gmail.com",
-      "description": "test",
+      "description": "1234",
       "type": "typeB",
       "id": 4
+    },
+    {
+      "conditions": true,
+      "period": "1",
+      "name": "asd",
+      "email": "ads@gmail.com",
+      "description": "asd",
+      "type": "typeA",
+      "id": 5
+    },
+    {
+      "conditions": true,
+      "period": "1",
+      "name": "asd",
+      "email": "asd@gmail.com",
+      "description": "asd",
+      "type": "typeB",
+      "id": 6
     }
   ],
   "users": []
