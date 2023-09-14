@@ -53,6 +53,7 @@ const props = defineProps({
         required: true
     }
 })
+const emit = defineEmits(['update'])
 
 onBeforeMount (() => {
     editingTask.value = props.task
@@ -72,6 +73,7 @@ const saveTask = async () => {
   const result = await axios.put(url, editingTask.value)
   console.log(result);
   openDialog.value = false
+  emit('update', true);
 }
 
 

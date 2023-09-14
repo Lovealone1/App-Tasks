@@ -20,7 +20,7 @@
           </tr>
         </tbody>
       </v-table>
-      <tasks-edit-dialog v-if="editingTask != null" :dialog="isEdit" :task="editingTask" />
+      <tasks-edit-dialog v-if="editingTask != null" :dialog="isEdit" :task="editingTask" @update="updateTask"/>
     </div>
   
     <!-- Cuadro de diálogo de confirmación para eliminar tarea -->
@@ -72,5 +72,13 @@
     isEdit.value = true;
     editingTask.value = { ...item };
   };
+
+  const updateTask = (isUpdated) => {
+    console.log(isUpdated);
+    isEdit.value = false
+    editingTask.value=null
+    loadTasks();
+  };
+  
   </script>
   
