@@ -48,12 +48,25 @@
     {
       "conditions": true,
       "period": "1",
-      "name": "Tarea 2",
+      "name": "Tarea 3",
       "email": "asd@gmail.com",
       "description": "asd",
       "type": "typeB",
       "id": 6
     }
   ],
-  "users": []
+  "users": [
+    {
+      "id": 1,
+      "fulName": "Daniel Garcia",
+      "email": "dan@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "fullName": "test",
+      "email": "test@gmail.com",
+      "password": "1234"
+    }
+  ]
 }
