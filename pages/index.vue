@@ -104,7 +104,6 @@ export default {
 
       if (foundUser) {
         console.log('Inicio de sesión exitoso para el usuario:', foundUser);
-        // Redirige a la página de tareas después de un inicio de sesión exitoso
         this.$router.push('/tareas');
       } else {
         console.error('Credenciales incorrectas. Inicio de sesión fallido.');
@@ -118,7 +117,6 @@ layout: "blank",
 </script>
 
 <style scoped>
-/* Centra el formulario verticalmente y elimina el espacio alrededor */
 .login-container{
 
 justify-content: center;
@@ -126,7 +124,7 @@ align-items: center;
 height: 100vh;
 }
 .login-container v-card {
-width: 100%; /* Ajusta el ancho de la tarjeta al 100% del contenedor */
+width: 100%;
 }
 
 
